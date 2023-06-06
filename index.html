@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>BÀI TẬP QUẢN LÝ TUYỂN SINH</h1>
+        <div class="mb-3">
+            <label for="" class="form-label">Điểm Toán</label>
+            <input type="text"
+              class="form-control" name="" id="txtDiemToan" aria-describedby="helpId" placeholder="Nhập vào điểm Toán">
+          </div>
+
+          <div class="mb-3">
+            <label for="" class="form-label">Điểm Văn</label>
+            <input type="text"
+              class="form-control" name="" id="txtDiemVan" aria-describedby="helpId" placeholder="Nhập vào điểm Văn">
+          </div>
+
+          <div class="mb-3">
+            <label for="" class="form-label">Điểm Anh</label>
+            <input type="text"
+              class="form-control" name="" id="txtDiemAnh" aria-describedby="helpId" placeholder="Nhập vào điểm Anh">
+          </div>
+
+
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập điểm chuẩn</label>
+          <input type="text"
+            class="form-control" name="" id="txtDiemChuan" aria-describedby="helpId" placeholder="Nhập vào điểm chuẩn">
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Nhập khu vực</label>
+            <input type="text"
+              class="form-control" name="" id="txtKhuVuc" aria-describedby="helpId" placeholder="Nhập vào điểm Văn">
+          </div>
+
+          <div class="mb-3">
+            <label for="" class="form-label">Nhập đối tượng</label>
+            <input type="text"
+              class="form-control" name="" id="txtDoiTuong" aria-describedby="helpId" placeholder="Nhập vào điểm Văn">
+          </div>
+
+          <button class="btn btn-success mb-3" id="btnKiemTra">Kiểm Tra</button>
+
+          <div class="bg-danger bg-opacity-75 p-3 text-white" id="ketQua"></div>
+
+
+       
+    </div>
+
+
+
+    <div class="container mt-3">
+        <h1>Bài tập tính tiền điện</h1>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập vào tên khách hàng</label>
+          <input type="text"
+            class="form-control" name="" id="txtTen" aria-describedby="helpId" placeholder="">
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Lượng điện tiêu thụ:</label>
+            <input type="text"
+              class="form-control" name="" id="txtLuongDien" aria-describedby="helpId" placeholder="">
+          </div>
+
+          <button class="btn btn-success mb-3" id="btnTinhToan">Tính tiền điện</button>
+          <div class="bg-success bg-opacity-75 p-3 rounded-3 mb-5 text-white" id="ketQuaTinh"></div>
+    </div>
+
+
+
+    <div class="container">
+        <h1>BÀI TẬP TÍNH THUẾ THU NHẬP CÁ NHÂN</h1>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Họ và tên</label>
+            <input type="text"
+              class="form-control" name="" id="txtHoTen" aria-describedby="helpId" placeholder="">
+        
+          </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số người phụ thuộc</label>
+          <input type="text"
+            class="form-control" name="" id="txtNguoiPhuThuoc" aria-describedby="helpId" placeholder="">
+      
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Tổng thu nhập</label>
+            <input type="text"
+              class="form-control" name="" id="txtTongThuNhap" aria-describedby="helpId" placeholder="">
+        
+          </div>
+
+          <button class="btn btn-success mb-3" id="btnTinhThue">Tính Thuế</button>
+          <div class="bg-success bg-opacity-75 text-white p-3" id="ketQuaThue"></div>
+    </div>
+
+
+    <div class="container">
+        <h1>BÀI TẬP TÍNH TIỀN CAP</h1>
+        <div class="mb-3">
+          <label for="" class="form-label">Mã khách hàng</label>
+          <input type="text"
+            class="form-control" name="" id="txtMaKhachHang" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">City</label>
+          <select multiple class="form-select form-select-lg" name="" id="txtLoaiKhachHang">
+                <option selected>Chọn khách hàng</option>
+                <option value="1">Nhà dân</option>
+                <option value="2">Doanh nghiệp</option>
+            </select>
+        </div>
+
+        <div class="d-none">
+          <label for="" class="form-label">Số kết nối</label>
+          <input type="text"
+            class="form-control" name="" id="txtSoKetNoi" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Số kênh cao cấp</label>
+            <input type="text"
+              class="form-control" name="" id="txtSoKenhCaoCap" aria-describedby="helpId" placeholder="">
+          </div>
+
+          <button class="btn btn-success mb-3" id="bntTinhTienCap">Tính tiền cap</button>
+          <div class="bg-success bg-opacity-75 p-3" id="ketQuaTienCap"></div>
+    </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
