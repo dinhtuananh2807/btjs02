@@ -148,6 +148,40 @@ Xử lý
 */
 
 document.getElementById("txtLoaiKhachHang").onclick = function(){
-    var loaiKhachHang = document.getElementsByTagName("option").value;
-    console.log(loaiKhachHang);
+    var loaiKhachHang = document.getElementById("txtLoaiKhachHang").value;
+    if(loaiKhachHang == 1){
+       var ketNoi = document.getElementById("txtSoKetNoi");
+       ketNoi.setAttribute('disabled', '');
+    }else {
+        var ketNoi = document.getElementById("txtSoKetNoi");
+        ketNoi.removeAttribute('disabled');
+    }
+}
+
+document.getElementById("bntTinhTienCap").onclick = function(){
+    var maKhachHang = document.getElementById("txtMaKhachHang").value;
+    var loaiKhachHang = document.getElementById("txtLoaiKhachHang").value;
+    var ketNoiThem = 0;
+    var soKenhCaoCap = document.getElementById("txtSoKenhCaoCap").value*1;
+    if(loaiKhachHang == 1) {
+        var phiHoaDon = 4.5;
+        var phiCoBan = 20.5;
+        var phiThueKenhCaoCap = soKenhCaoCap*7.5;
+    }else {
+        var phiHoaDon = 15;
+        var ketNoiThem = document.getElementById("txtSoKetNoi").value*1;
+        if (ketNoiThem <= 10){
+            var phiCoBan = 7.5*ketNoiThem;
+        }else {
+            var phiCoBan = 75 + (ketNoiThem-10)*5;
+        }
+        var phiThueKenhCaoCap = soKenhCaoCap * 50;
+    }
+
+    var soTienCanTra = phiCoBan + phiHoaDon + phiThueKenhCaoCap;
+
+    document.getElementById("ketQuaTienCap").innerHTML = `Số tiền phải trả là ${soTienCanTra}`;
+
+
+
 }
